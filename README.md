@@ -36,13 +36,11 @@ You should create one R script called run_analysis.R that does the following.
 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-## Script run_analysis.R
+## Files
+* CodeBook.md - describtion of all the variables, the data, and any transformations
 
-* Creates an Folder and download dataset from web, if it doesn't already exists in workspace
-1. Read and merge test and train data (x(measurements), y(activity) and subject) and create one dataset using rbind & cbind
-2. Extracts only the measurements on the mean and standard deviation for each measurement using select
-3. Uses descriptive activity names to name the activities in the data set using the activity name
-4. Appropriately labels the data set with descriptive variable names using gsub
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-using group_by, to converts dataset into a grouped tbl 
-and summarise_all the average of each variable 
+* run_analysis.R - data preparation with the 5 tasks from the task description.
+
+* Result.txt - exported final data cleanup
+
+* Result.csv - exported final data cleanup
