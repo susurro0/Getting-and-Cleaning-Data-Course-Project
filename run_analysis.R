@@ -66,8 +66,10 @@ names(extracted_data)<-gsub("angle", "Angle", names(extracted_data))
 #names(extracted_data)
 
 # Task 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-
+#group data by subjectid & activity
 group <- group_by(extracted_data, subjectId, Activity)
+#summarise_all-> use same transformation for all variables of group tbl
 final_data <- summarise_all(group, list(mean))
+setwd('..')
 write.table(final_data, "Result.txt", row.name=FALSE)
 
