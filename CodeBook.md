@@ -1,7 +1,7 @@
 # Code Book
 
 ## Script 
-File with R code "run_analysis.Rperform 5 tasks from the task description.
+File with R code "run_analysis.R perform 5 tasks from the task description.
 
 ## Variables
 * x_train, y_train, x_test, y_test, subject_train and subject_test contain downloaded files data
